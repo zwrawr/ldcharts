@@ -1,0 +1,50 @@
+/*
+* Palette Tester: http://ludumdare.org/dev/palette
+* Reference: https://www.sessions.edu/color-calculator/
+*/
+
+// Color Triad
+@COL_A: #E53;						// Red (Main)
+@COL_B: #FC1;						// Yellow (Pair)  was #FD1
+@COL_C: #2288F7;					// Blue (Triadic)  was #28E
+
+@COL_N: mix(#777, @COL_C, 90%); 	// Neutral -- Center color used as the backdrop  was #7d7d82
+
+/* Blends */
+@COL_AB: mix(@COL_A, @COL_B, 50%);
+@COL_BC: #6C2;
+@COL_CA: #B7E;
+
+/* Primary Greys */
+@COL_M: @COL_N;						// Mute -- Color blended against when muting  was #777
+@COL_L: @COL_NLLLLL;				// Light -- Lightest color that can be diferentiated from White was #EEE
+@COL_D: @COL_NDDDDD;				// Dark -- Darkest color that can be reasonably differentiated from Black was #222
+
+/* Reference Greys */
+@COL_W: #FFF;						// White
+@COL_G: #888;						// Grey (Middle Grey)
+@COL_K: #000;						// Key (i.e. Black from CMYK)
+
+/* Mutes */
+@COL_AM: mix(@COL_A, @COL_M, 50%);
+@COL_BM: mix(@COL_B, @COL_M, 50%);
+@COL_CM: mix(@COL_C, @COL_M, 50%);
+@COL_ABM: mix(@COL_AB, @COL_M, 50%);
+@COL_BCM: mix(@COL_BC, @COL_M, 50%);
+@COL_CAM: mix(@COL_CA, @COL_M, 50%);
+
+/* Neutral Pushed Colors */
+@COL_ND: darken(mix(@COL_N, @COL_C, 96%), 8%);
+@COL_NDD: darken(mix(@COL_ND, @COL_C, 96%), 7%);
+@COL_NDDD: darken(mix(@COL_NDD, @COL_N, 96%), 6%);
+@COL_NDDDD: darken(mix(@COL_NDDD, @COL_N, 97%), 7%);
+@COL_NDDDDD: darken(mix(@COL_NDDDD, @COL_N, 98%), 8%);
+
+@COL_NL: lighten(mix(@COL_N, @COL_C, 96%), 10%);
+@COL_NLL: lighten(mix(@COL_NL, @COL_C, 96%), 10%);
+@COL_NLLL: lighten(mix(@COL_NLL, @COL_C, 96%), 10%);
+@COL_NLLLL: lighten(mix(@COL_NLLL, @COL_C, 96%), 10%);
+@COL_NLLLLL: lighten(mix(@COL_NLLLL, @COL_C, 96%), 10%);
+
+@MAJOR_DARK: #000;
+@MAJOR_LIGHT: #FFF;
