@@ -1,0 +1,35 @@
+{
+  "name": "ludumcharts",
+  "version": "0.0.1",
+  "description": "simple charts libary in preact",
+  "main": "index.js",
+  "scripts": {
+	"lint": "npm run lint:js; npm run lint:css",
+	"test": "echo \"Error: no test specified\" && exit 1",
+	"lint:js": "eslint lib --config config/.eslintrc.js",
+	"lint:css": "stylelint **/*.less --config ./config/.stylelintrc.json"
+  },
+  "keywords": [
+    "preact",
+    "chart",
+    "graph",
+    "visulization"
+  ],
+  "author": "Zak West",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-eslint": "^10.0.2",
+    "coveralls": "^3.0.4",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-preact-pure": "^2.0.0",
+    "eslint": "^6.0.0",
+    "eslint-plugin-react": "^7.13.0",
+    "jest": "^24.8.0",
+    "stylelint": "^10.1.0",
+    "stylelint-config-standard": "^18.3.0"
+  },
+  "dependencies": {
+	"preact": "^8.4.2",
+    "classnames": "^2.2.6"
+  }
+}
