@@ -1,5 +1,5 @@
 {
-  "name": "ludumcharts",
+  "name": "ldcharts",
   "version": "0.0.1",
   "description": "simple charts libary in preact",
   "main": "index.js",
