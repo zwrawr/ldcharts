@@ -4,10 +4,10 @@
   "description": "simple charts libary in preact",
   "main": "index.js",
   "scripts": {
-	"lint": "npm run lint:js; npm run lint:css",
-	"test": "echo \"Error: no test specified\" && exit 1",
-	"lint:js": "eslint lib --config config/.eslintrc.js",
-	"lint:css": "stylelint **/*.less --config ./config/.stylelintrc.json"
+    "lint": "npm run lint:js; npm run lint:css",
+    "test": "NODE_ENV=test jest --config=config/.jestrc.json",
+    "lint:js": "eslint lib --config config/.eslintrc.js",
+    "lint:css": "stylelint **/*.less --config ./config/.stylelintrc.json"
   },
   "keywords": [
     "preact",
@@ -18,18 +18,24 @@
   "author": "Zak West",
   "license": "ISC",
   "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-react": "^7.0.0",
     "babel-eslint": "^10.0.2",
+    "babel-jest": "^24.8.0",
     "coveralls": "^3.0.4",
     "enzyme": "^3.10.0",
     "enzyme-adapter-preact-pure": "^2.0.0",
     "eslint": "^6.0.0",
     "eslint-plugin-react": "^7.13.0",
     "jest": "^24.8.0",
+    "jest-fetch-mock": "^2.1.2",
     "stylelint": "^10.1.0",
     "stylelint-config-standard": "^18.3.0"
   },
   "dependencies": {
-	"preact": "^8.4.2",
-    "classnames": "^2.2.6"
+    "classnames": "^2.2.6",
+    "preact": "^8.4.2"
   }
 }

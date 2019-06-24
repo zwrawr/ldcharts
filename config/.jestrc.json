@@ -1,0 +1,43 @@
+{
+	"verbose": true,
+	"rootDir": "./../",
+	"setupFiles": [
+		"<rootDir>/test/__mocks__/browserMocks.js",
+		"<rootDir>/test/__mocks__/fetchMocks.js",
+		"<rootDir>/test/__setup__/enzymeSetup.js"
+	],
+	"testRegex": "(/(__test__|test)/.*|(\\.|/)(test|spec))\\.jsx?$",
+	"testPathIgnorePatterns": [
+		"/node_modules/",
+		"<rootDir>/test/__mocks__/*",
+		"<rootDir>/test/__setup__/*"
+	],
+	"testURL": "http://localhost:8080",
+	"moduleFileExtensions": [
+		"js",
+		"jsx"
+	],
+	"moduleDirectories": [
+		"node_modules"
+	],
+	"moduleNameMapper": {
+		"\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/test/__mocks__/fileMocks.js",
+		"\\.(css|less|scss)$": "identity-obj-proxy",
+		"^./style$": "identity-obj-proxy",
+		"^preact$": "<rootDir>/node_modules/preact/dist/preact.min.js"
+	},
+	"transform": {
+		"^.+\\.jsx?$": "./test/__setup__/customTransformer.js"
+	},
+	"errorOnDeprecated": true,
+	"collectCoverage": true,
+	"collectCoverageFrom": [
+		"lib/**/*.{js,jsx}",
+		"!**/node_modules/**",
+		"!**/vendor/**"
+	],
+	"coverageReporters": [
+		"text",
+		"lcovonly"
+	]
+}
