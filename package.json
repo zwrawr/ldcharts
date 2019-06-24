@@ -4,10 +4,12 @@
   "description": "simple charts libary in preact",
   "main": "index.js",
   "scripts": {
-    "lint": "npm run lint:js; npm run lint:css",
-    "test": "NODE_ENV=test jest --config=config/.jestrc.json",
+	"test": "NODE_ENV=test jest --config=config/.jestrc.json",
+	"lint": "npm run lint:js; npm run lint:css",
     "lint:js": "eslint lib --config config/.eslintrc.js",
-    "lint:css": "stylelint **/*.less --config ./config/.stylelintrc.json"
+	"lint:css": "stylelint **/*.less --config ./config/.stylelintrc.json",
+	"clean": "echo [clean] Starting... ; npm run clean:coverage ; echo [clean] Finished",
+	"clean:coverage": "if [ -e coverage ] ; then rm -rf coverage && echo [clean] cleaned coverage ; fi"
   },
   "keywords": [
     "preact",
