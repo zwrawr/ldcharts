@@ -4,12 +4,12 @@
   "description": "simple charts libary in preact",
   "main": "index.js",
   "scripts": {
-	"test": "NODE_ENV=test jest --config=config/.jestrc.json",
-	"lint": "npm run lint:js; npm run lint:css",
+    "test": "NODE_ENV=test jest --config=config/.jestrc.json",
+    "lint": "npm run lint:js; npm run lint:css",
     "lint:js": "eslint lib --config config/.eslintrc.js",
-	"lint:css": "stylelint **/*.less --config ./config/.stylelintrc.json",
-	"clean": "echo [clean] Starting... ; npm run clean:coverage ; echo [clean] Finished",
-	"clean:coverage": "if [ -e coverage ] ; then rm -rf coverage && echo [clean] cleaned coverage ; fi"
+    "lint:css": "stylelint **/*.less --config ./config/.stylelintrc.json",
+    "clean": "echo [clean] Starting... ; npm run clean:coverage ; echo [clean] Finished",
+    "clean:coverage": "if [ -e coverage ] ; then rm -rf coverage && echo [clean] cleaned coverage ; fi"
   },
   "keywords": [
     "preact",
@@ -32,6 +32,7 @@
     "eslint": "^6.0.0",
     "eslint-plugin-react": "^7.13.0",
     "jest": "^24.8.0",
+    "jest-each": "^24.8.0",
     "jest-fetch-mock": "^2.1.2",
     "stylelint": "^10.1.0",
     "stylelint-config-standard": "^18.3.0"
