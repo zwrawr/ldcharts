@@ -1,8 +1,19 @@
 language: node_js
 node_js:
   - "10"
+stage: test
 script:
   - npm run lint
   - npm run test
   - cat coverage/lcov.info | coveralls
+stage: build
+script:
+  - npm run build:jsdoc
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  local_dir: "./build/docs"
+  on:
+    branch: master
 cache: npm
