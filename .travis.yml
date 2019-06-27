@@ -8,7 +8,7 @@ script:
   - cat coverage/lcov.info | coveralls
 stage: build
 script:
-  - npm run build:jsdoc
+  - npm run build:esdoc
 deploy:
   provider: pages
   skip_cleanup: true
