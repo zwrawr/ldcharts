@@ -1,0 +1,26 @@
+{
+	"source": "./lib",
+	"destination": "./build/docs",
+	"plugins": [
+		{"name": "esdoc2-standard-plugin"},
+		{"name": "esdoc2-exclude-source-plugin"},
+		{"name": "esdoc2-jsx-plugin"},
+		{
+			"name": "esdoc2-inject-style-plugin",
+			"option": {
+				"enable": true, "styles": ["./config/esdoc/esdoc.css"]
+			}
+		},
+		{
+			"name": "esdoc2-brand-plugin",
+			"option": {
+			  "logo": "./config/esdoc/logo.png",
+			  "title": "LDCharts",
+			  "description": "A small and simple charting libary for preact",
+			  "repository": "https://github.com/zwrawr/ldcharts",
+			  "author": "https://twitter.com/zwrawr",
+			  "image": "https://zakwest.co.uk/files/Github/ldcharts/image.png"
+			}
+		}
+	]
+  }

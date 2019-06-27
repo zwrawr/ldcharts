@@ -1,0 +1,25 @@
+
+body .content > div,
+body .content > h1,
+body .content > table {
+
+	max-width: 1080px;
+	margin: 0 auto;
+}
+
+body > .content > .identifiers-wrap {
+
+	justify-content: space-between;
+}
+
+/* Make the Header Nav Links a little bigger */
+body > header > a {
+
+	font-size: 125%;
+}
+
+/* Make the Nav Titles a little bigger */
+body > nav li > a {
+
+	font-size: 125%;
+}
