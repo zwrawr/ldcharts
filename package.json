@@ -9,7 +9,7 @@
     "build": "npm run build:esdoc",
     "clean": "echo [clean] Starting... ; npm run clean:coverage ; npm run clean:build ; echo [clean] Finished",
     "lint:js": "eslint lib --config config/.eslintrc.js",
-    "lint:css": "stylelint **/*.less --config ./config/.stylelintrc.json",
+    "lint:css": "stylelint \"lib/**/**.less\" --config ./config/.stylelintrc.json",
     "build:esdoc": "esdoc2 -c config/esdoc/.esdocrc.json",
     "clean:coverage": "if [ -e coverage ] ; then rm -rf coverage && echo [clean] cleaned coverage ; fi",
     "clean:build": "if [ -e build ] ; then rm -rf build && echo [clean] cleaned build ; fi"
