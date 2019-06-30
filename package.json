@@ -4,13 +4,16 @@
   "description": "simple charts libary in preact",
   "main": "index.js",
   "scripts": {
-    "test": "NODE_ENV=test jest --config=config/.jestrc.json",
+    "test": "NODE_ENV=test jest --config=config/jest/.jestrc.json",
     "lint": "npm run lint:js; npm run lint:css",
-    "build": "npm run build:esdoc",
+    "build": "npm run build:setup; npm run build:esdoc; npm run build:bundle; npm run build:minify",
     "clean": "echo [clean] Starting... ; npm run clean:coverage ; npm run clean:build ; echo [clean] Finished",
     "lint:js": "eslint lib --config config/.eslintrc.js",
-    "lint:css": "stylelint \"lib/**/**.less\" --config ./config/.stylelintrc.json",
+	"lint:css": "stylelint \"lib/**/**.less\" --config ./config/.stylelintrc.json",
+	"build:setup": "mkdir -p build && mkdir -p build/bundle",
     "build:esdoc": "esdoc2 -c config/esdoc/.esdocrc.json",
+    "build:bundle": "node config/rollup.config.js",
+    "build:minify": "uglifyjs --compress --mangle --output build/bundle/bundle.min.js -- build/bundle/bundle.js",
     "clean:coverage": "if [ -e coverage ] ; then rm -rf coverage && echo [clean] cleaned coverage ; fi",
     "clean:build": "if [ -e build ] ; then rm -rf build && echo [clean] cleaned build ; fi"
   },
@@ -21,12 +24,14 @@
     "visulization"
   ],
   "author": "Zak West",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@babel/cli": "^7.4.4",
     "@babel/core": "^7.4.5",
+    "@babel/plugin-transform-runtime": "^7.4.4",
     "@babel/preset-env": "^7.4.5",
     "@babel/preset-react": "^7.0.0",
+    "@babel/template": "^7.4.4",
     "babel-eslint": "^10.0.2",
     "babel-jest": "^24.8.0",
     "coveralls": "^3.0.4",
@@ -43,8 +48,13 @@
     "jest": "^24.8.0",
     "jest-each": "^24.8.0",
     "jest-fetch-mock": "^2.1.2",
+    "rollup": "^1.16.3",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-commonjs": "^10.0.1",
+    "rollup-plugin-node-resolve": "^5.2.0",
     "stylelint": "^10.1.0",
-    "stylelint-config-standard": "^18.3.0"
+	"stylelint-config-standard": "^18.3.0",
+	"uglify-js": "^3.6.0"
   },
   "dependencies": {
     "classnames": "^2.2.6",

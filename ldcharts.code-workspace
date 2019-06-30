@@ -6,7 +6,7 @@
 	],
 	"settings": {
 		"eslint.options": {
-			"configFile": "config/.eslintrc.js"
+			"configFile": "config/.eslintrc.js",
 		},
 		"stylelint.config": {
 			"extends": "./config/.stylelintrc.json"

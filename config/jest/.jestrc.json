@@ -1,6 +1,6 @@
 {
 	"verbose": true,
-	"rootDir": "./../",
+	"rootDir": "./../../",
 	"setupFiles": [
 		"<rootDir>/test/__mocks__/browserMocks.js",
 		"<rootDir>/test/__mocks__/fetchMocks.js",
