@@ -27,7 +27,7 @@ npm run lint
 npm run clean
 
 # build docs and bundle
-npm run clean
+npm run build
 
 ```
 ### Directory Struture
