@@ -24,7 +24,7 @@
     "visulization"
   ],
   "author": "Zak West",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@babel/cli": "^7.4.4",
     "@babel/core": "^7.4.5",
