@@ -9,8 +9,8 @@
     "build": "npm run build:setup; npm run build:esdoc; npm run build:bundle; npm run build:minify",
     "clean": "echo [clean] Starting... ; npm run clean:coverage ; npm run clean:build ; echo [clean] Finished",
     "lint:js": "eslint lib --config config/.eslintrc.js",
-	"lint:css": "stylelint \"lib/**/**.less\" --config ./config/.stylelintrc.json",
-	"build:setup": "mkdir -p build && mkdir -p build/bundle",
+    "lint:css": "stylelint \"lib/**/**.less\" --config ./config/.stylelintrc.json",
+    "build:setup": "mkdir -p build && mkdir -p build/bundle",
     "build:esdoc": "esdoc2 -c config/esdoc/.esdocrc.json",
     "build:bundle": "node config/rollup.config.js",
     "build:minify": "uglifyjs --compress --mangle --output build/bundle/bundle.min.js -- build/bundle/bundle.js",
@@ -50,11 +50,9 @@
     "jest-fetch-mock": "^2.1.2",
     "rollup": "^1.16.3",
     "rollup-plugin-babel": "^4.3.3",
-    "rollup-plugin-commonjs": "^10.0.1",
-    "rollup-plugin-node-resolve": "^5.2.0",
     "stylelint": "^10.1.0",
-	"stylelint-config-standard": "^18.3.0",
-	"uglify-js": "^3.6.0"
+    "stylelint-config-standard": "^18.3.0",
+    "uglify-js": "^3.6.0"
   },
   "dependencies": {
     "classnames": "^2.2.6",
