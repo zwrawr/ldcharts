@@ -1,8 +1,7 @@
-node_modules
 *.lock
-
-build/
-tmp/
-coverage/
-
 *.log
+
+node_modules
+tmp
+build
+coverage
