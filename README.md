@@ -1,4 +1,4 @@
-# LudumCharts
+# LDCharts
 [![Build Status](https://travis-ci.com/zwrawr/ldcharts.svg?branch=master)](https://travis-ci.com/zwrawr/ldcharts)
 [![Coverage Status](https://coveralls.io/repos/github/zwrawr/ldcharts/badge.svg?branch=master)](https://coveralls.io/github/zwrawr/ldcharts?branch=master)
 [![Documentation Status](https://zwrawr.github.io/ldcharts/badge.svg)](https://zwrawr.github.io/ldcharts/)
