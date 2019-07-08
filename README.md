@@ -3,7 +3,7 @@
 [![Coverage Status](https://coveralls.io/repos/github/zwrawr/ldcharts/badge.svg?branch=master)](https://coveralls.io/github/zwrawr/ldcharts?branch=master)
 [![Documentation Status](https://zwrawr.github.io/ldcharts/badge.svg)](https://zwrawr.github.io/ldcharts/)
 
-![](https://zakwest.co.uk/files/Github/ldcharts/chart.png)
+![](https://zakwest.co.uk/public/files/Github/ldcharts/chart.png)
 
 
 > this project is based off of code in [ludumdare/ludumdare](https://github.com/ludumdare/ludumdare). Which is under the MIT lincence and written by zwrawr(me), local-minimum and mikekasprzak
