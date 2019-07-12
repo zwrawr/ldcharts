@@ -1,0 +1,107 @@
+{
+  "coverage": "30.23%",
+  "expectCount": 43,
+  "actualCount": 13,
+  "files": {
+    "lib/axes/axes.js": {
+      "expectCount": 3,
+      "actualCount": 0,
+      "undocumentLines": [
+        4,
+        6,
+        48
+      ]
+    },
+    "lib/barchart/bar-axis-tick.js": {
+      "expectCount": 3,
+      "actualCount": 0,
+      "undocumentLines": [
+        4,
+        5,
+        7
+      ]
+    },
+    "lib/barchart/bar-x-axis.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        7
+      ]
+    },
+    "lib/barchart/bar-y-axis.js": {
+      "expectCount": 3,
+      "actualCount": 0,
+      "undocumentLines": [
+        6,
+        7,
+        27
+      ]
+    },
+    "lib/barchart/bar.js": {
+      "expectCount": 3,
+      "actualCount": 0,
+      "undocumentLines": [
+        4,
+        6,
+        9
+      ]
+    },
+    "lib/barchart/barchart.js": {
+      "expectCount": 5,
+      "actualCount": 0,
+      "undocumentLines": [
+        8,
+        10,
+        11,
+        32,
+        37
+      ]
+    },
+    "lib/graph/graph.js": {
+      "expectCount": 4,
+      "actualCount": 0,
+      "undocumentLines": [
+        7,
+        10,
+        40,
+        63
+      ]
+    },
+    "lib/graph/line.js": {
+      "expectCount": 4,
+      "actualCount": 0,
+      "undocumentLines": [
+        4,
+        6,
+        9,
+        16
+      ]
+    },
+    "lib/legend/legend.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        4,
+        7
+      ]
+    },
+    "lib/piechart/piechart.js": {
+      "expectCount": 8,
+      "actualCount": 6,
+      "undocumentLines": [
+        9,
+        92
+      ]
+    },
+    "lib/piechart/piesegment.js": {
+      "expectCount": 2,
+      "actualCount": 2,
+      "undocumentLines": []
+    },
+    "lib/utils.js": {
+      "expectCount": 5,
+      "actualCount": 5,
+      "undocumentLines": []
+    }
+  }
+}
