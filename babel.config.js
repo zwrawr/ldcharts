@@ -17,12 +17,19 @@ module.exports = function (api) {
 
 	const plugins = [
 		[
+			'babel-plugin-postcss',
+			{
+				test : /\.less$/,
+			}
+		],
+		[
 			"@babel/plugin-transform-react-jsx",
 			{
 				pragma: "h",
 				pragmaFrag: "Fragment"
 			}
-		]
+		],
+		"@babel/plugin-proposal-class-properties"
 	];
 
 	return {
