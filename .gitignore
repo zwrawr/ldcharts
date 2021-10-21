@@ -5,3 +5,5 @@ node_modules
 tmp
 build
 coverage
+ldcharts.code-workspace
+package-lock.json
